@@ -36,7 +36,7 @@ while conti:
             break
         else:
             print('No!')
-    print('\nresult:{0}/{1}\n'.format(c,i+1))
+    print('\nresult:{0}/{1}\n'.format(c,i))
     for i in wrong:
         print(data[i][1],data[i][2])
     if input('\nagain?(y/N)')!='y':
