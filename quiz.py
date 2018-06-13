@@ -2,6 +2,8 @@
 import random
 random.seed()
 
+import os
+
 #import from file
 f=open('data.csv','r')
 data=f.readlines()
@@ -26,10 +28,12 @@ while conti:
         ans=input(data[i][2]+'>')
         if ans==data[i][1]:
             print('OK')
+            os.system('say "'+data[i][1]+'"')
             c+=1
             i+=1
         elif ans=='':
             print(data[i][1])
+            os.system('say "'+data[i][1]+'"')
             wrong.append(i)
             i+=1
         elif ans=='q':
